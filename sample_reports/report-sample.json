@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-09-28T12:42:09.063234Z",
+  "opportunities": [
+    {
+      "pair": "WETH / USDC",
+      "spread_percent": 0.85,
+      "best": "1inch",
+      "worst": "0x"
+    }
+  ],
+  "summary": {
+    "total_pairs": 2,
+    "candidates": 1
+  }
+}

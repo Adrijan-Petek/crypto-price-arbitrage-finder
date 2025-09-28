@@ -1,0 +1,24 @@
+{
+  "pairs": [
+    {
+      "name": "WETH / USDC",
+      "fromSymbol": "WETH",
+      "toSymbol": "USDC",
+      "fromAddress": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "toAddress": "0xA0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fromDecimals": 18,
+      "toDecimals": 6,
+      "sampleSellAmount": 0.1
+    },
+    {
+      "name": "WBTC / USDC",
+      "fromSymbol": "WBTC",
+      "toSymbol": "USDC",
+      "fromAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "toAddress": "0xA0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fromDecimals": 8,
+      "toDecimals": 6,
+      "sampleSellAmount": 0.01
+    }
+  ]
+}
