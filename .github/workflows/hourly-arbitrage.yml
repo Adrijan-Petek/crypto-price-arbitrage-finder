@@ -1,0 +1,33 @@
+name: Hourly Arbitrage Scan
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Run scanner
+        run: npm run scan
+        env:
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          CHAIN_IDS: ${{ secrets.CHAIN_IDS || '1' }}
+
+      - name: Upload reports artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: reports/

@@ -1,0 +1,88 @@
+{
+  "chains": [
+    {
+      "id": 1,
+      "name": "ethereum",
+      "aggregators": ["0x", "1inch", "paraswap", "cow"],
+      "defaultUsdSell": 50,
+      "pairs": [
+        {
+          "name": "WETH / USDC",
+          "fromSymbol": "WETH",
+          "toSymbol": "USDC",
+          "fromAddress": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+          "toAddress": "0xA0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "fromDecimals": 18,
+          "toDecimals": 6,
+          "coingeckoId": "ethereum",
+          "usdSellTarget": 50,
+          "minBuyAmount": 5
+        },
+        {
+          "name": "WBTC / USDC",
+          "fromSymbol": "WBTC",
+          "toSymbol": "USDC",
+          "fromAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+          "toAddress": "0xA0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "fromDecimals": 8,
+          "toDecimals": 6,
+          "coingeckoId": "wrapped-bitcoin",
+          "usdSellTarget": 50,
+          "minBuyAmount": 5
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "name": "polygon",
+      "aggregators": ["0x", "1inch", "paraswap"],
+      "defaultUsdSell": 25,
+      "pairs": [
+        {
+          "name": "WMATIC / USDC",
+          "fromSymbol": "WMATIC",
+          "toSymbol": "USDC",
+          "fromAddress": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+          "toAddress": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+          "fromDecimals": 18,
+          "toDecimals": 6,
+          "coingeckoId": "matic-network",
+          "usdSellTarget": 25,
+          "minBuyAmount": 5
+        },
+        {
+          "name": "WETH (PoS) / USDC",
+          "fromSymbol": "WETH",
+          "toSymbol": "USDC",
+          "fromAddress": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "toAddress": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+          "fromDecimals": 18,
+          "toDecimals": 6,
+          "coingeckoId": "ethereum",
+          "usdSellTarget": 50,
+          "minBuyAmount": 5
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "bsc",
+      "aggregators": ["1inch", "paraswap"],
+      "defaultUsdSell": 25,
+      "pairs": [
+        {
+          "name": "WBNB / USDT",
+          "fromSymbol": "WBNB",
+          "toSymbol": "USDT",
+          "fromAddress": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+          "toAddress": "0x55d398326f99059fF775485246999027B3197955",
+          "fromDecimals": 18,
+          "toDecimals": 18,
+          "coingeckoId": "binancecoin",
+          "usdSellTarget": 25,
+          "minBuyAmount": 5
+        }
+      ]
+    }
+  ]
+}

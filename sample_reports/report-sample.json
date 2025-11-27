@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-09-28T12:42:09.063Z",
+  "chains": [
+    {
+      "chain": "ethereum",
+      "chainId": 1,
+      "total_pairs": 2,
+      "opportunities": [
+        {
+          "pair": "WETH / USDC",
+          "spread_percent": 0.85,
+          "best": "1inch",
+          "worst": "0x",
+          "sellAmount": 0.1,
+          "sellToken": "WETH",
+          "buyToken": "USDC"
+        },
+        {
+          "pair": "WBTC / USDC",
+          "spread_percent": 0.42,
+          "best": "paraswap",
+          "worst": "1inch",
+          "sellAmount": 0.01,
+          "sellToken": "WBTC",
+          "buyToken": "USDC"
+        }
+      ],
+      "raw": []
+    },
+    {
+      "chain": "polygon",
+      "chainId": 137,
+      "total_pairs": 1,
+      "opportunities": [
+        {
+          "pair": "WMATIC / USDC",
+          "spread_percent": 0.31,
+          "best": "paraswap",
+          "worst": "1inch",
+          "sellAmount": 15,
+          "sellToken": "WMATIC",
+          "buyToken": "USDC"
+        }
+      ],
+      "raw": []
+    }
+  ],
+  "top": [
+    {
+      "pair": "WETH / USDC",
+      "spread_percent": 0.85,
+      "best": "1inch",
+      "worst": "0x",
+      "sellAmount": 0.1,
+      "sellToken": "WETH",
+      "buyToken": "USDC",
+      "chain": "ethereum"
+    }
+  ],
+  "summary": {
+    "total_chains": 2,
+    "total_pairs": 3,
+    "candidates": 3
+  }
+}
