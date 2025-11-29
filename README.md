@@ -1,4 +1,4 @@
-# Crypto Price Arbitrage Finder 
+# Crypto Price Arbitrage Finder  
 
 Compare quotes across multiple DEX aggregators (0x, 1inch, Paraswap, CowSwap) on multiple chains, rank spreads, and publish JSON/CSV/Markdown reports for a small frontend dashboard.
 
